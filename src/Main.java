@@ -42,7 +42,7 @@ public class Main {
     public static void task3() {
 
         System.out.println("\nЗадача_3");
-        int year = 2021;
+        int year = 100;
 
         if (((year % 4) == 0 && (year % 100 != 0)) || ((year % 100) == 0 && (year % 400) == 0)) {
             System.out.println("Год весокостный");
@@ -67,13 +67,13 @@ public class Main {
         int deliveryTime =1;
 
         if (deliveryDistance <= 20) {
-            System.out.println("Потребуется дней" + deliveryTime);
+            System.out.println("Потребуется дней " + deliveryTime);
         } else if (20 < deliveryDistance && deliveryDistance <= 60) {
             deliveryTime = deliveryTime + 1;
-            System.out.println("Потребуется дней" + deliveryTime);
+            System.out.println("Потребуется дней " + deliveryTime);
         } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
             deliveryTime = deliveryTime + 2;
-            System.out.println("Потребуется дней" + deliveryTime);
+            System.out.println("Потребуется дней " + deliveryTime);
         } else System.out.println("Доставки нет");
 
     }
