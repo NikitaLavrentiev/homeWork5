@@ -43,8 +43,9 @@ public class Main {
 
         System.out.println("\nЗадача_3");
         int year = 100;
+        boolean target = ((year % 4) == 0 && (year % 100 != 0)) || ((year % 100) == 0 && (year % 400) == 0);
 
-        if (((year % 4) == 0 && (year % 100 != 0)) || ((year % 100) == 0 && (year % 400) == 0)) {
+        if (target) {
             System.out.println("Год весокостный");
         } else System.out.println("Год не весокостный");
 
